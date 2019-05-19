@@ -1,34 +1,63 @@
-:root{
-  --mainDark:#2A2C24;
-  --maiLight:#F4F7F5;
-  --mainOrange:#E2711D;
-  --mainYellow:#FFC857;
-  --mainBlue:#30BCED;
+:root {
+  --mainDark: #2A2C24;
+  --maiLight: #F4F7F5;
+  --mainOrange: rgb(226, 113, 29);
+  --mainYellow: rgb(255, 200, 87);
+  --mainBlue: #30BCED;
 }
 
-body{
+body {
   background: var(--maiLight);
   color: var(--mainDark);
   font-family: Verdana, Geneva, Tahoma, sans-serif !important
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Courier New', Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
 
-
-.logo{
+.logo {
   widows: 48px;
   height: 48px;
 }
 
-.text-yellow{
+.text-yellow {
   color: var(--mainYellow);
 }
 
-.cart-icon{
+.cart-icon {
   cursor: pointer;
   color: var(--mainYellow);
   font-size: 2rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 200, 87, 0.9), rgba(255, 200, 87, 0.9));
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.title {
+  color: var(--mainYellow);
+}
+
+.footer {
+  background: var(--mainDark);
+  color: var(--mainYellow) !important;
+}
+
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainDark);
 }
