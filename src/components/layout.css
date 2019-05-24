@@ -1,6 +1,6 @@
 :root {
   --mainDark: #2A2C24;
-  --maiLight: #F4F7F5;
+  --maiLight: #FAFAFA;
   --mainOrange: rgb(226, 113, 29);
   --mainYellow: rgb(255, 200, 87);
   --mainBlue: #30BCED;
@@ -34,6 +34,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .default-background {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.about-background {
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
