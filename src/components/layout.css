@@ -4,9 +4,14 @@
   --mainOrange: rgb(226, 113, 29);
   --mainYellow: rgb(255, 200, 87);
   --mainBlue: #30BCED;
+  --mainGray:#EEEEEE;
 }
 
-body {
+html,body {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
   background: var(--maiLight);
   color: var(--mainDark);
   font-family: Verdana, Geneva, Tahoma, sans-serif !important
@@ -67,4 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-yellow:hover {
   background: var(--mainYellow);
   color: var(--mainDark);
+}
+
+.menu,.contact{
+  background: var(--mainGray);
 }
