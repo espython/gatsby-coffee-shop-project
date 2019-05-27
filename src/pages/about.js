@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => (
       title="about us"
       styleClass="about-background"
     />
-    <Info />
+    <Info data={{ link: '/', dest: 'home' }} />
   </Layout>
 )
 

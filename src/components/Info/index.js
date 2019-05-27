@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Title from '../Title'
 
-export default function Info() {
+export default function Info({ data }) {
   return (
     <section className="py-5">
       <div className="container">
@@ -17,9 +17,9 @@ export default function Info() {
               Velit tempora non suscipit quisquam minus deserunt neque nostrum
               tempore? Ut, earum similique enim modi sequi eos vero.
             </p>
-            <Link to="/about/">
+            <Link to={data.link}>
               <button className="btn text-uppercase btn-yellow" type="button">
-                about page
+                {data.dest}
               </button>
             </Link>
           </div>

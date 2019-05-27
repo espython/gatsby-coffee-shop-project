@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
       title="Coffee Magic"
       styleClass="default-background"
     />
-    <Info />
+    <Info data={{ link: '/about', dest: 'about' }} />
     <Menu items={data.menu} />
     <Products />
     <Contact />
